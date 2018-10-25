@@ -4,7 +4,7 @@ import "../App.css";
 class Card extends Component {
   state = {
     title: this.props.title,
-    title: this.props.message
+    message: this.props.message
   };
 
   render() {
@@ -13,7 +13,7 @@ class Card extends Component {
         <div className="card-body">
           <h5 className="card-title">{this.props.title}</h5>
           <p className="card-text">{this.props.message}</p>
-          <a href="#" className="btn btn-primary">
+          <a href="/" className="btn btn-primary">
             Go somewhere
           </a>
         </div>
