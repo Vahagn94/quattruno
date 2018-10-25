@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import Card from "./components/Card.js";
 
 class App extends Component {
   render() {
@@ -15,26 +16,10 @@ class App extends Component {
         <div className="container">
           <div className="row">
             <div className="col-sm-6">
-              <div className="card" style={{ width: "25rem", height: "20rem" }}>
-                <div className="card-body">
-                  <h5 className="card-title">Books</h5>
-                  <p className="card-text">Buy & Sell Textbooks</p>
-                  <a href="#" className="btn btn-primary">
-                    Go somewhere
-                  </a>
-                </div>
-              </div>
+              <Card title="Books" message="Buy & Sell Books" />
             </div>
             <div className="col-sm-6">
-              <div className="card" style={{ width: "25rem", height: "20rem" }}>
-                <div className="card-body">
-                  <h5 className="card-title">Notes</h5>
-                  <p className="card-text">Upload and View Notes</p>
-                  <a href="#" className="btn btn-primary">
-                    Go somewhere
-                  </a>
-                </div>
-              </div>
+              <Card title="Notes" message="Upload & View Notes" />
             </div>
           </div>
         </div>
