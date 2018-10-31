@@ -25,6 +25,28 @@
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+.row {
+  background-color: #FF9293;
+  height: 10rem;
+}
+
+[class*="col-"] {
+  background-color: #f8f9fa;
+  height: 50rem;
+/* uncomment to see what area the card covers
+  border: 2px solid rgba(0,0,0,0.3);
+*/
+}
+
+.pagerLink {
+    text-decoration: none !important;
+}
+
+#container-scroll{
+  height: calc(100vh - 110px);
+  overflow-y: scroll;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
