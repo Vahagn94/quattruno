@@ -26,23 +26,23 @@
 }
 
 .row {
-  background-color: #FF9293;
+  background-color: #ff9293;
   height: 10rem;
 }
 
 [class*="col-"] {
   background-color: #f8f9fa;
   height: 50rem;
-/* uncomment to see what area the card covers
+  /* uncomment to see what area the card covers
   border: 2px solid rgba(0,0,0,0.3);
 */
 }
 
-.pagerLink {
-    text-decoration: none !important;
+.pageLink {
+  text-decoration: none !important;
 }
 
-#container-scroll{
+#container-scroll {
   height: calc(100vh - 110px);
   overflow-y: scroll;
 }
@@ -54,4 +54,37 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.toggle-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 130px;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+  margin-left: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button_line {
+  width: 113%;
+  height: 2px;
+  background: white;
+}
+
+.toggle-button_title {
+  color: white;
+  margin: 5px 20px;
+  display: center;
+}
+
+.spacer {
+  flex: 1;
 }
