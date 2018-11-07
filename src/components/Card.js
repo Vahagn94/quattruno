@@ -13,6 +13,10 @@ class Card extends Component {
         <div className="card-body" style={{paddingTop: "3rem"}}>
           <h5 className="card-title" style={{fontSize: "2rem"}}>{this.props.title}</h5>
           <p className="card-text" style={{paddingTop: "1rem"}}>{this.props.message}</p>
+          <a href="/" className="btn btn-primary" style={{ borderRadius: "15px", width: "6rem"}}
+>
+            Go
+          </a>
         </div>
       </div>
     );
