@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
-import Card from "../components/Card.js";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import Card from "../Components/Card.js";
 
 class Home extends Component {
   render() {
