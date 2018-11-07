@@ -29,7 +29,7 @@ class CustomNavbar extends Component {
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary Shadow">
         <div className="container-fluid">
           <div className="navbar-header">
-            <Link to="/">
+            <Link to="/" className="noTextDecoration">
               <h1 style={{ color: "#FFFFFF", fontSize: 30 }}>CSUN Hub</h1>
             </Link>
           </div>

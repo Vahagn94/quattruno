@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Card from "../Components/Card.js";
+import "../App.css"
 
 class Home extends Component {
   render() {
@@ -14,19 +15,19 @@ class Home extends Component {
               </div>
 
               <div className="col-sm-6 col-lg-3">
-                <Link to="/Books">
+                <Link to="/Books" className="noTextDecoration">
                   <Card title="Books" message="Buy and Sell Books" />
                 </Link>
               </div>
 
               <div className="col-sm-12 col-lg-3">
-                <Link to="/Notes">
+                <Link to="/Notes" className="noTextDecoration">
                   <Card title="Notes" message="Share Notes" />
                 </Link>
               </div>
 
               <div className="col-sm-12 col-lg-3">
-                <Link to="/RideSharing">
+                <Link to="/RideSharing" className="noTextDecoration">
                   <Card title="Ridesharing" message="Ride Together" />
                 </Link>
               </div>
