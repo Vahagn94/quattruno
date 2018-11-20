@@ -9,13 +9,10 @@ class Card extends Component {
 
   render() {
     return (
-      <div className="card" style={{ width: "25rem", height: "20rem" }}>
-        <div className="card-body">
-          <h5 className="card-title">{this.props.title}</h5>
-          <p className="card-text">{this.props.message}</p>
-          <a href="/" className="btn btn-primary">
-            Go somewhere
-          </a>
+      <div className="card" style={{height: "48rem", borderRadius: "5px"}}>
+        <div className="card-body" style={{paddingTop: "3rem"}}>
+          <h5 className="card-title" style={{fontSize: "2rem"}}>{this.props.title}</h5>
+          <p className="card-text" style={{paddingTop: "1rem"}}>{this.props.message}</p>
         </div>
       </div>
     );
