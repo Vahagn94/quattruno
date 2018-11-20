@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import Card from "./components/Card.js";
+import Card from "./Components/Card.js";
 
 class App extends Component {
   render() {
