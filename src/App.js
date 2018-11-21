@@ -6,10 +6,6 @@ import Notes from "./Pages/Notes";
 import Navbar from "./Pages/CustomNavbar";
 import RideSharing from "./Pages/RideSharing";
 import "./App.css";
-<<<<<<< HEAD
-import Card from "./Components/Card.js";
-=======
->>>>>>> master
 
 class App extends Component {
   render() {

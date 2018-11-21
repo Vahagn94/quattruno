@@ -39,7 +39,7 @@
 }
 
 .noTextDecoration {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 #container-scroll {
@@ -86,5 +86,6 @@
 }
 
 .spacer {
-  flex: 1;
+  height: 5px;
+  width: calc(50% - 200px);
 }

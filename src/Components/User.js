@@ -9,13 +9,16 @@ class User extends Component {
   render() {
     return (
       <button className="toggle-button" onClick={this.props.click}>
-        <div className="Name-settings">
+        <div
+          className="Name-settings"
+          style={{ fontWeight: 500, fontSize: 12 }}
+        >
           {this.props.name}
           <img
             src={require("./smiley.png")}
             alt="."
-            width="height"
             height="40"
+            width="height"
             style={{ padding: 5 }}
           />
         </div>
