@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import User from "../Components/User.js";
 import Backdrop from "../Components/Backdrop.js";
 import UserDrawer from "../Components/UserDrawer.js";
+import "../App.css";
 
 class CustomNavbar extends Component {
   state = {
@@ -33,8 +34,11 @@ class CustomNavbar extends Component {
               <h1 style={{ color: "#FFFFFF", fontSize: 30 }}>CSUN Hub</h1>
             </Link>
           </div>
-          <User name="Firstname Last" click={this.userDrawerHandler} />
-          <UserDrawer show={this.state.userDrawerOpen} />
+          <div className="spacer" />
+          <div>
+            <User name="Firstname" click={this.userDrawerHandler} />
+            <UserDrawer show={this.state.userDrawerOpen} />
+          </div>
         </div>
       </nav>
     );

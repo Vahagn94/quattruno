@@ -86,7 +86,8 @@
 }
 
 .spacer {
-  flex: 1;
+  height: 5px;
+  width: calc(50% - 200px);
 }
 
 .scrolling-wrapper {
