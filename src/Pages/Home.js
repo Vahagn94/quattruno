@@ -16,19 +16,19 @@ class Home extends Component {
 
               <div className="col-sm-6 col-lg-3">
                 <Link to="/Books" className="noTextDecoration">
-                  <Card title="Books" message="Buy and Sell Books" />
+                  <Card title="Books" message="Buy and Sell Books" height="50rem"/>
                 </Link>
               </div>
 
               <div className="col-sm-12 col-lg-3">
                 <Link to="/Notes" className="noTextDecoration">
-                  <Card title="Notes" message="Share Notes" />
+                  <Card title="Notes" message="Share Notes" height="50rem" />
                 </Link>
               </div>
 
               <div className="col-sm-12 col-lg-3">
                 <Link to="/RideSharing" className="noTextDecoration">
-                  <Card title="Ridesharing" message="Ride Together" />
+                  <Card title="Ridesharing" message="Ride Together" height="50rem"/>
                 </Link>
               </div>
 

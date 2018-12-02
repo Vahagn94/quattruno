@@ -10,7 +10,7 @@ class Books extends Component {
           <div className="col-lg-12">
             <Card title="Books" height="55rem"
               body =
-              <div class="scrolling-wrapper">
+              <div className="scrolling-wrapper">
                 <div className="card-deck" style={{paddingTop: "5rem"}}>
                   <Card title="Intro to Operating Systems" message="322" height="30rem"/>
                   <Card title="Data Mining" message="484"/>
