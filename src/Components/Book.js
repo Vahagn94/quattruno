@@ -18,7 +18,7 @@ class Book extends Component {
         <div class="imagecont">
           <img
             class="card-img-top"
-            src={require("./book-picture-example2.jpg")}
+            src={require("../Images/book-picture-example2.jpg")}
             alt="Card image cap"
           />
           <div class="overlay">

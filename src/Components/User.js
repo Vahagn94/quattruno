@@ -12,11 +12,11 @@ class User extends Component {
         <div className="Name-settings">
           {this.props.name}
           <img
-            src={require("./smiley.png")}
+            src={require("../Images/empty-avatar.png")}
             alt="."
-            width="height"
+            width="40"
             height="40"
-            style={{ padding: 5 }}
+            style={{ padding: 5, borderRadius: "50%" }}
           />
         </div>
       </button>
