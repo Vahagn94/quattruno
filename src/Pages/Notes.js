@@ -7,7 +7,7 @@ class Notes extends Component {
     return (
       <div className="container-fluid" id="container-scroll">
           <div className="col-lg-12">
-            <Card title="Notes"/>
+            <Card title="Notes" height="55rem"/>
           </div>
       </div>
     );
