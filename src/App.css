@@ -39,7 +39,7 @@
 }
 
 .noTextDecoration {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 #container-scroll {
@@ -90,17 +90,40 @@
 }
 
 .scrolling-wrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-
-  .card {
-    display: inline-block;
-    overflow-x: auto;
-
-  }
+  position: absolute;
+  left: 0px;
+  display: block;
+  max-height: 100%;
+  margin: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(-80px);
+  transform-origin: right top;
 }
 
-.card-deck::-webkit-scrollbar {
-  display: none;
+.scrolling-wrapper > div {
+  display: block;
+  padding: 5px;
+  transform: rotate(90deg);
+  transform-origin: right top;
+}
+
+.cards {
+  padding: 250px 0 0 0;
+  height: 100%;
+}
+.cards > div {
+  width: 250px;
+  height: 100%;
+  margin: 10px 0;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
 }
