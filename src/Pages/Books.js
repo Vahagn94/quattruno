@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../App.css";
 import Card from "../Components/Card.js";
+import Book from "../Components/Book.js";
 //import BookCard from "../Components/Card.js";
 
 class Books extends Component {
@@ -12,16 +13,37 @@ class Books extends Component {
             title="Books"
             height="55rem"
             body={
-              <div>
-                <div class="scrolling-wrapper cards">
-                  <Card title="1 Intro to Operating Systems" message="322" />
-                  <Card title="2 Data Mining" message="484" />
-                  <Card title="3 Combinatorial Algorithms" message="482" />
-                  <Card title="4 Discrete Structures" message="252" />
-                  <Card title="5 Data Mining" message="484" />
-                  <Card title="6 Combinatorial Algorithms" message="482" />
-                  <Card title="7 Discrete Structures" message="252" />
-                </div>
+              <div class="card-deck">
+                <Book
+                  price="100"
+                  title="Intro to Operating Systems"
+                  course="COMP 322"
+                  description="Hard-Cover book, bought bran-new and used for a semester. Email if interested only"
+                  contactInfo="someonesPrivate@email.com"
+                />
+                <Book
+                  price="79"
+                  title="Data Mining"
+                  course="COMP 484"
+                  description="Selling as a SET
+                  'Psychological Assessment with the MMPI-2' Alan F. Friedman, Richard Lewak, David S. Nicols, James T. Webb
+                  'Essentials of the PAI Assessment' Leslie C. ..."
+                  contactInfo="someoneElse@email.com"
+                />
+                <Book
+                  price="30"
+                  title="Combinatorial Algorithms"
+                  course="COMP 482"
+                  description="First come first serve"
+                  contactInfo="anotherSomeone@email.com"
+                />
+                <Book
+                  price="55"
+                  title="Discrete Structures"
+                  course="COMP 252"
+                  description="Have many other books for sale"
+                  contactInfo="yes@email.com"
+                />
               </div>
             }
           />
