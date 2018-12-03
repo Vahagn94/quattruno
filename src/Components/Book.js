@@ -14,27 +14,27 @@ class Book extends Component {
 
   render() {
     return (
-      <div class="card">
-        <div class="imagecont">
+      <div className="card">
+        <div className="imagecont">
           <img
-            class="card-img-top"
-            src={require("../Images/book-picture-example2.jpg")}
+            className="card-img-top"
+            src={require("../Images/book-picture-example.jpg")}
             alt="Card image cap"
           />
-          <div class="overlay">
-            <div class="text">
+          <div className="overlay">
+            <div className="text">
               If interested contact {this.props.contactInfo}
             </div>
           </div>
         </div>
-        <label class="price">${this.props.price}</label>
-        <div class="card-body">
-          <h5 class="card-title">{this.props.title}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">{this.props.course}</h6>
-          <p class="card-text">{this.props.description}</p>
+        <label className="price">${this.props.price}</label>
+        <div className="card-body">
+          <h5 className="card-title">{this.props.title}</h5>
+          <h6 className="card-subtitle mb-2 text-muted">{this.props.course}</h6>
+          <p className="card-text">{this.props.description}</p>
         </div>
-        <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
+        <div className="card-footer">
+          <small className="text-muted">Last updated 3 mins ago</small>
         </div>
       </div>
     );
