@@ -24,11 +24,11 @@
 .Shadow {
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
-
+/*
 .row {
   background-color: #ff9293;
   height: 10rem;
-}
+}*/
 
 [class*="col-"] {
   background-color: #f8f9fa;
@@ -211,4 +211,10 @@ label.price:before {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.centerMe{
+  text-align: center;
+  height: 100%;
+  width: 100%;
 }
