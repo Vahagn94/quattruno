@@ -218,3 +218,7 @@ label.price:before {
   height: 100%;
   width: 100%;
 }
+
+.rightText{
+  text-align: right;
+}

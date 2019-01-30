@@ -18,7 +18,7 @@ class Books extends Component {
                   price="100"
                   title="Intro to Operating Systems"
                   course="COMP 322"
-                  description="Hard-Cover book, bought bran-new and used for a semester. Email if interested only"
+                  description="Hard-Cover book, bought brand-new and used for a semester. Email if interested only"
                   contactInfo="someonesPrivate@email.com"
                 />
                 <Book

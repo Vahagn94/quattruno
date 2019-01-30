@@ -10,33 +10,33 @@ class Home extends Component {
   render() {
     return (
         <div>
-        <div className="modal" id="mymodal" data-backdrop="false">
-          <div className="modal-dialog">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h3 className="text-center text-primary centerMe"> Enter Class Numbers </h3>
-                <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              </div>
-              <div className="modal-body">
-                <form>
-                  <div className="row">
-                    <div className="col">
-                      <input type="text" className="form-control" placeholder="Class 1"/><br/>
-                      <input type="text" className="form-control" placeholder="Class 2"/><br/>
-                      <input type="text" className="form-control" placeholder="Class 3"/><br/>
+          <div className="modal" id="mymodal" data-backdrop="false">
+            <div className="modal-dialog">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h3 className="text-center text-primary centerMe"> Enter Class Numbers </h3>
+                  <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div className="modal-body">
+                  <form>
+                    <div className="row">
+                      <div className="col">
+                        <input type="text" className="form-control" placeholder="Class 1"/><br/>
+                        <input type="text" className="form-control" placeholder="Class 2"/><br/>
+                        <input type="text" className="form-control" placeholder="Class 3"/><br/>
+                      </div>
+                      <div className="col">
+                        <input type="text" className="form-control" placeholder="Class 4"/><br/>
+                        <input type="text" className="form-control" placeholder="Class 5"/><br/>
+                        <input type="text" className="form-control" placeholder="Class 6"/><br/>
+                      </div>
                     </div>
-                    <div className="col">
-                      <input type="text" className="form-control" placeholder="Class 4"/><br/>
-                      <input type="text" className="form-control" placeholder="Class 5"/><br/>
-                      <input type="text" className="form-control" placeholder="Class 6"/><br/>
-                    </div>
-                  </div>
-                  <button type="submit">Save</button>
-                </form>
+                    <button type="submit">Save</button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
-        </div>
           <div className="container-fluid" id="container-scroll">
             <div className="row">
               <div className="col-sm-6 col-lg-3">
