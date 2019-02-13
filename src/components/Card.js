@@ -6,7 +6,8 @@ class Card extends Component {
     title: this.props.title,
     message: this.props.message,
     body: this.props.body,
-    height: this.props.height
+    height: this.props.height,
+    footer: this.props.footer
   };
 
   render() {
@@ -16,6 +17,7 @@ class Card extends Component {
           <h5 className="card-title" style={{fontSize: "2rem"}}>{this.props.title}</h5>
           <p className="card-text" style={{paddingTop: "1rem"}}>{this.props.message}</p>
           <div> {this.props.body} </div>
+          <div>{this.props.footer} </div>
         </div>
       </div>
     );

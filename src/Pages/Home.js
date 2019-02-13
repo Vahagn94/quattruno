@@ -43,6 +43,17 @@ class Home extends Component {
                 <button data-target="#mymodal" data-toggle="modal">
                   Update Classes
                 </button>
+                <br/>
+                <br/>
+                <br/>
+
+                <Card title="Surinder Singh" height="7rem" /><br/>
+                <br/>
+                <Card title="Planner" height="7rem" /><br/>
+                <br/>
+                <Card title="Classes" height="7rem" /><br/>
+                <br/>
+                <Card title="Log Out" height="7rem" />
               </div>
 
               <div className="col-sm-6 col-lg-3">

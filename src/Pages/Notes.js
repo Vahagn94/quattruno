@@ -43,6 +43,11 @@ class Notes extends Component {
                   />
                 </div>
               }
+              footer={
+                <div>
+                  <button style={{margin:20}}> Load More </button>
+                </div>
+              }
             />
           </div>
       </div>
