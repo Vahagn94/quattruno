@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "../App.css";
 import Card from "../Components/Card.js";
 import Book from "../Components/Book.js";
-//import BookCard from "../Components/Card.js";
 
 class Books extends Component {
   render() {
