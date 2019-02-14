@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
-//import SignInModal from "../Components/SignInModal.js";
 
 class CustomNavbar extends Component {
 
@@ -30,6 +29,7 @@ class CustomNavbar extends Component {
                 </form>
               </div>
             </div>
+
           </div>
         </div>
         <div className="modal" id="logInModal" data-backdrop="false">
