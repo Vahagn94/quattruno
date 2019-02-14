@@ -8,21 +8,16 @@ class User extends Component {
 
   render() {
     return (
-      <button className="toggle-button" onClick={this.props.click}>
-        <div
-          className="Name-settings"
-          style={{ fontWeight: 500, fontSize: 12 }}
-        >
-          {this.props.name}
-          <img
-            src={require("../Images/empty-avatar.png")}
-            alt="."
-            width="40"
-            height="40"
-            style={{ padding: 5, borderRadius: "50%" }}
-          />
-        </div>
-      </button>
+      <div className="Name-settings" style={{ fontWeight: 500, fontSize: 12 }}>
+        {this.props.name}
+        <img
+          src={require("../Images/empty-avatar.png")}
+          alt="."
+          width="40"
+          height="40"
+          style={{ padding: 5, borderRadius: "50%" }}
+        />
+      </div>
     );
   }
 }
