@@ -1,32 +1,58 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import User from "../Components/User.js";
-import Backdrop from "../Components/Backdrop.js";
-import UserDrawer from "../Components/UserDrawer.js";
 import "../App.css";
+//import SignInModal from "../Components/SignInModal.js";
 
 class CustomNavbar extends Component {
-  state = {
-    userDrawerOpen: false
-  };
-
-  userDrawerHandler = () => {
-    this.setState(prevState => {
-      return { userDrawerOpen: !prevState.userDrawerOpen };
-    });
-  };
-
-  backdropClickHandler = () => {
-    this.setState({ userDrawerOpen: false });
-  };
 
   render() {
-    let backdrop;
-    if (this.state.userDrawerOpen) {
-      backdrop = <Backdrop click={this.backdropClickHandler} />;
-    }
-
     return (
+      <div>
+        <div className="modal" id="signInModal" data-backdrop="false">
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h3 className="text-center text-primary centerMe"> Sign Up </h3>
+                <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div className="modal-body">
+                <form>
+                  <div className="row">
+                    <div className="col">
+                      <input type="text" className="form-control" placeholder="CSUN Email"/><br/>
+                      <input type="text" className="form-control" placeholder="First Name"/><br/>
+                      <input type="text" className="form-control" placeholder="Last Name"/><br/>
+                      <input type="text" className="form-control" placeholder="Password"/><br/>
+                      <input type="text" className="form-control" placeholder="Confirm Password"/><br/>
+                    </div>
+                  </div>
+                  <button type="submit">Save</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="modal" id="logInModal" data-backdrop="false">
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h3 className="text-center text-primary centerMe"> Log In </h3>
+                <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div className="modal-body">
+                <form>
+                  <div className="row">
+                    <div className="col">
+                      <input type="text" className="form-control" placeholder="CSUN Email"/><br/>
+                      <input type="text" className="form-control" placeholder="Password"/><br/>
+                    </div>
+                  </div>
+                  <button type="submit">Save</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary Shadow">
         <div className="container-fluid">
           <div className="navbar-header">
@@ -36,11 +62,12 @@ class CustomNavbar extends Component {
           </div>
           <div className="spacer" />
           <div>
-            <User name="Firstname" click={this.userDrawerHandler} />
-            <UserDrawer show={this.state.userDrawerOpen} />
+            <button style={{color:"red", margin: "10px"}} data-target="#signInModal" data-toggle="modal"> Sign Up </button>
+            <button style={{color:"red", margin: "10px"}} data-target="#logInModal" data-toggle="modal"> Log In </button>
           </div>
         </div>
       </nav>
+      </div>
     );
   }
 }

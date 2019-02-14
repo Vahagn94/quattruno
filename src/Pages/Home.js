@@ -10,7 +10,7 @@ class Home extends Component {
   render() {
     return (
         <div>
-          <div className="modal" id="mymodal" data-backdrop="false">
+          <div className="modal" id="classNumberModal" data-backdrop="false">
             <div className="modal-dialog">
               <div className="modal-content">
                 <div className="modal-header">
@@ -40,7 +40,7 @@ class Home extends Component {
           <div className="container-fluid" id="container-scroll">
             <div className="row">
               <div className="col-sm-6 col-lg-3">
-                <button data-target="#mymodal" data-toggle="modal">
+                <button data-target="#classNumberModal" data-toggle="modal">
                   Update Classes
                 </button>
                 <br/>
