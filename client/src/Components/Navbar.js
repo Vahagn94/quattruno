@@ -1,70 +1,76 @@
-import React, { Component } from 'react'
-import { Link, withRouter } from 'react-router-dom'
+import React, { Component } from "react";
+import { Link, withRouter } from "react-router-dom";
 
 class Navbar extends Component {
-    logOut(e) {
-        e.preventDefault()
-        localStorage.removeItem('usertoken')
-        this.props.history.push(`/`)
-    }
+  logOut(e) {
+    e.preventDefault();
+    localStorage.removeItem("usertoken");
+    this.props.history.push(`/`);
+  }
 
-    render() {
-        const loginRegLink = (
-            <ul className="navbar-nav">
-                <li className="nav-item">
-                    <Link to="/login" className="nav-link">
-                    <h1 style={{ color: "#FFFFFF", fontSize: 20 }}>Log In</h1>
-                    </Link>
-                </li>
-                {"                "}
-                <li className="nav-item">
-                    <Link to="/register" className="nav-link">
-                    <h1 style={{ color: "#FFFFFF", fontSize: 20 }}>Register</h1>
-                    </Link>
-                </li>
-            </ul>
-        )
-        const userLink = (
-            <ul className="navbar-nav">
-                <li className="nav-item">
-                    <Link to="/profile" className="nav-link">
-                        User
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <a href="" onClick={this.logOut.bind(this)} className="nav-link">
-                        Logout
-                    </a>
-                </li>
-            </ul>
-        )
+  render() {
+    const loginRegLink = (
+      <ul className="nav navbar-form navbar-right">
+        <div className="row">
+          <li className="nav-item">
+            <Link to="/login" className="nav-link">
+              <h1 style={{ color: "#FFFFFF", fontSize: 20 }}>Log In</h1>
+            </Link>
+          </li>
+          {"                "}
+          <li className="nav-item">
+            <Link to="/register" className="nav-link">
+              <h1 style={{ color: "#FFFFFF", fontSize: 20 }}>Register</h1>
+            </Link>
+          </li>
+        </div>
+      </ul>
+    );
 
-        return (
-            <nav className="navbar navbar-expand-lg navbar-dark bg-primary Shadow">
-                <button className="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbar1"
-                    aria-controls="navbar1"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span className="navbar-toggle-icon"></span>
-                </button>
+    const userLink = (
+      <ul className="nav navbar-form navbar-right">
+        <div className="row">
+          <li className="nav-item">
+            <Link to="/profile" className="nav-link">
+              User
+            </Link>
+          </li>
+          <li className="nav-item">
+            <a href="" onClick={this.logOut.bind(this)} className="nav-link">
+              Logout
+            </a>
+          </li>
+        </div>
+      </ul>
+    );
 
-                <div className="collapse navbar-collapse justify-content-md-center"
-                    id="navbar1">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <Link to="/" className="nav-link">
-                            <h1 style={{ color: "#FFFFFF", fontSize: 20 }}>CSUN Hub</h1>
-                            </Link>
-                        </li>
-                    </ul>
-                    {localStorage.usertoken ? userLink : loginRegLink}
-                </div>
-            </nav>
-        )
-    }
+    return (
+      <nav
+        className="navbar navbar-expand-lg navbar-dark bg-primary"
+        style={{ padding: "0px 10px" }}
+      >
+        <div className="container-fluid" id="navbar1">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link to="/" className="nav-link">
+                <h1
+                  style={{
+                    color: "#FFFFFF",
+                    fontSize: 35,
+                    fontWeight: 730
+                  }}
+                >
+                  CSUN Hub
+                </h1>
+              </Link>
+            </li>
+          </ul>
+
+          {localStorage.usertoken ? userLink : loginRegLink}
+        </div>
+      </nav>
+    );
+  }
 }
 
-export default withRouter(Navbar)
+export default withRouter(Navbar);
