@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../App.css";
 import Card from "../Components/Card.js";
 
-class RideSharing extends Component {
+class Ridesharing extends Component {
   render() {
     return (
       <div className="container-fluid" id="container-scroll">
@@ -13,3 +13,5 @@ class RideSharing extends Component {
     );
   }
 }
+
+export default Ridesharing;
