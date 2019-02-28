@@ -126,3 +126,7 @@ label.price:before {
 .rightText{
   text-align: right;
 }
+
+.personalbubble {
+  margin: 10px;
+}

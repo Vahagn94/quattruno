@@ -40,7 +40,7 @@ class Home extends Component {
           <div className="container-fluid" id="container-scroll">
             <div className="row">
               <div className="col-sm-6 col-lg-3">
-                <button data-target="#classNumberModal" data-toggle="modal">
+                <button className="personalbubble" data-target="#classNumberModal" data-toggle="modal">
                   Update Classes
                 </button>
                 <br/>

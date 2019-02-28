@@ -47,7 +47,7 @@ class Navbar extends Component {
     return (
       <nav
         className="navbar navbar-expand-lg navbar-dark bg-primary"
-        style={{ padding: "0px 10px" }}
+        style={{ padding: "0px 10px" , marginBottom: 10}}
       >
         <div className="container-fluid" id="navbar1">
           <ul className="navbar-nav">
